@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @hotel.name %>
+</p>
+
+<p>
+  <b>Email address:</b>
+  <%= @hotel.email_address %>
+</p>
+
+<p>
+  <b>Address line1:</b>
+  <%= @hotel.address_line1 %>
+</p>
+
+<p>
+  <b>Zip code:</b>
+  <%= @hotel.zip_code %>
+</p>
+
+<p>
+  <b>Po box:</b>
+  <%= @hotel.po_box %>
+</p>
+
+<p>
+  <b>Phone number:</b>
+  <%= @hotel.phone_number %>
+</p>
+
+<p>
+  <b>City</b>
+  <%= @hotel.city.name %>
+</p>
+
+<p>
+  <b>State</b>
+  <%= @hotel.city.state.name %>
+</p>
+
+
+<%= link_to 'Edit', edit_hotel_path(@hotel) %> |
+<%= link_to 'Back', hotels_path %>

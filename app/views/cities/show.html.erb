@@ -1,0 +1,18 @@
+<div class="container">
+
+        <!-- Main hero unit for a primary marketing message or call to action -->
+        <div class="hero-unit">
+            <h1><%= @city.name %>, <%= @city.state.abbreviation%></h1>
+            <p><%= pluralize(@city.hotels.count, 'hotel') %> available</p>
+            <p><% @hotels.each do |hotel| %>
+			<p><%= hotel.name %></p>
+			<% end %></p>
+        </div>
+
+<p id="notice"><%= notice %></p>
+
+
+
+<%= link_to 'Edit', edit_city_path(@city) %> |
+<%= link_to 'Back', cities_path %>
+</div>
